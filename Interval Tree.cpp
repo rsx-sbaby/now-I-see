@@ -51,7 +51,7 @@ void push_down(fake k){
 	tree[k].lazy=0;
 }
 void chS(fake k,fake l,fake r,fake x){
-//å½“å‰åˆ°äº†ç¼–å·ä¸ºkçš„èŠ‚ç‚¹ï¼Œè¦æŠŠ[l..r]åŒºé—´ä¸­çš„æ‰€æœ‰å…ƒç´ çš„å€¼+x
+//µ±Ç°µ½ÁË±àºÅÎªkµÄ½Úµã£¬Òª°Ñ[l..r]Çø¼äÖĞµÄËùÓĞÔªËØµÄÖµ+x
 	if(tree[k].l>=l&&tree[k].r<=r){
 		tree[k].sum+=(tree[k].r-tree[k].l+1)*x;
 		tree[k].lazy+=x;
